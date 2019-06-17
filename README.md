@@ -19,7 +19,7 @@ resource "ASGRP_1" "bar" {
 initial_lifecycle_hook {
     name                 = "LH_1"
     default_result       = "ABANDON"
-    heartbeat_timeout    = 2000
+    heartbeat_timeout    = 3600
     lifecycle_transition = "autoscaling:EC2_INSTANCE_LAUNCHING"
 
     notification_metadata =
